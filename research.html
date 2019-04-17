@@ -4,27 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/">
+    <!-- <link rel="stylesheet" type="text/css" href="css/"> -->
     <link rel= "stylesheet" type= "text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Research</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
-    $(function() {
-	  $('.accordion').find('.accordion__title').click(function(){
-		// Adds active class
-		$(this).toggleClass('active');
-		// Expand or collapse this panel
-		$(this).next().slideToggle('fast');
-		// Hide the other panels
-		$('.accordion__content').not($(this).next()).slideUp('fast');
-		// Removes active class from other titles
-		$('.accordion__title').not($(this)).removeClass('active');
-	});
-}); </script>
-<!-- https://codepen.io/onepage-themes/pen/gRRQyo -->
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
+<script>
+function topnavfunc() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+// https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+</script>
   </head>
   <body>
     <header>
@@ -37,7 +51,7 @@
         <a href = "research.html" class = "active" >Research</a>
         <a href = "residency.html">Residency</a>
         <a href = "form.html" >Contact Me</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="topnavfunc()">
       <i class="fa fa-bars"></i>
     </a>
 
@@ -47,56 +61,40 @@
     <main id ="content">
     <h2>Published Research</h2>
 
+    <button class="accordion">Human papillomavirus vaccine stages of change among male and female university students: ready or not?</button>
+    <div class="panel">
+      <p>Patel, D. A., Grunzweig, K. A., Zochowski, M. K., Dempsey, A. F., Carlos, R. C., & Dalton, V. K. (2013). Human papillomavirus vaccine stages of change among male and female university students: ready or not? Journal of American College Health, 61(6), 336-346. doi:10.1080/07448481.2013.811244</p>
+    </div>
 
-      <div class="wrap">
+    <button class="accordion">Full-thickness Scalp Injury Due to Hair Braiding and Weave.</button>
+    <div class="panel">
+      <p>Grunzweig K, & Keys KA (2015). Full-thickness Scalp Injury Due to Hair Braiding and Weave. Plast Reconstr Surg Glob Open, 3(8), e477. doi:10.1097/GOX.0000000000000456</p>
+    </div>
 
-<ul class="accordion">
-  <li class="accordion__item">
-    <a class="accordion__title" href="javascript:void(0)">Human papillomavirus vaccine stages of change among male and female university students: ready or not?
-    </a>
-    <p class="accordion__content">Patel, D. A., Grunzweig, K. A., Zochowski, M. K., Dempsey, A. F., Carlos, R. C., & Dalton, V. K. (2013). Human papillomavirus vaccine stages of change among male and female university students: ready or not? Journal of American College Health, 61(6), 336-346. doi:10.1080/07448481.2013.811244</p></li>
-  <li class="accordion__item">
-    <a class="accordion__title" href="javascript:void(0)">Full-thickness Scalp Injury Due to Hair Braiding and Weave.
-    </a>
-    <p class="accordion__content">Grunzweig K, & Keys KA (2015). Full-thickness Scalp Injury Due to Hair Braiding and Weave. Plast Reconstr Surg Glob Open, 3(8), e477. doi:10.1097/GOX.0000000000000456</p></li>
-  <li class="accordion__item">
-    <a class="accordion__title" href="javascript:void(0)">Decisional practices and patterns of intraoperative glucose management in an academic medical center.
-    </a>
-    <p class="accordion__content">Grunzweig, K., Nair, B. G., Peterson, G. N., Horibe, M., Neradilek, M. B., Newman, S. F., . . . Hirsch, I. B. (2016). Decisional practices and patterns of intraoperative glucose management in an academic medical center. Journal of Clinical Anesthesia, 32, 214-223. doi:10.1016/j.jclinane.2016.02.027</p></li>
-  <li class="accordion__item">
-    <a class="accordion__title" href="javascript:void(0)">Intraoperative blood glucose management: impact of a real-time decision support system on adherence to institutional protocol.
-    </a>
-    <p class="accordion__content">Nair, B. G., Grunzweig, K., Peterson, G. N., Horibe, M., Neradilek, M. B., Newman, S. F., . . . Patchen Dellinger, E. (2016). Intraoperative blood glucose management: impact of a real-time decision support system on adherence to institutional protocol. Journal of Clinical Monitoring and Computing, 30(3), 301-312. doi:10.1007/s10877-015-9718-3</p></li>
-  <li class="accordion__item">
-    <a class="accordion__title" href="javascript:void(0)">Fibrin tissue sealant and minor skin grafts in burn surgery: A systematic review and meta-analysis (2019).
-    </a>
-    <p class="accordion__content">Grunzweig, K.A., Ascha, M., Kumar, A.R. Fibrin tissue sealant and minor skin grafts in burn surgery: A systematic review and meta-analysis (2019). Journal of Plastic Reconstructive and Aesthetic Surgery. Epub ahead of Print. doi: 10.1016/j.bjps.2018.12.036</p></li>
+    <button class="accordion">Decisional practices and patterns of intraoperative glucose management in an academic medical center.</button>
+    <div class="panel">
+      <p>Grunzweig, K., Nair, B. G., Peterson, G. N., Horibe, M., Neradilek, M. B., Newman, S. F., . . . Hirsch, I. B. (2016). Decisional practices and patterns of intraoperative glucose management in an academic medical center. Journal of Clinical Anesthesia, 32, 214-223. doi:10.1016/j.jclinane.2016.02.027</p>
+    </div>
 
+    <button class="accordion">Intraoperative blood glucose management: impact of a real-time decision support system on adherence to institutional protocol.</button>
+    <div class="panel">
+      <p>Nair, B. G., Grunzweig, K., Peterson, G. N., Horibe, M., Neradilek, M. B., Newman, S. F., . . . Patchen Dellinger, E. (2016). Intraoperative blood glucose management: impact of a real-time decision support system on adherence to institutional protocol. Journal of Clinical Monitoring and Computing, 30(3), 301-312. doi:10.1007/s10877-015-9718-3</p>
+    </div>
 
-          </ul>
-        </div>
-        <div class="wrap">
-<br>
-<h2>Committees</h2>
-<ul class="accordion">
-  <li class="accordion__item">
-    <a class="accordion__title" href="javascript:void(0)">Resident Education Center Curriculum V9 (2018)
-    </a>
-    <p class="accordion__content">Plastic Surgery Education Network: Resident Education Center Curriculum V9 (2018) – Face and Neck Lift. Faculty mentor: Dr. Ali Totonchi.</p></li>
-    <li class="accordion__item">
-      <a class="accordion__title" href="javascript:void(0)">Resident Board Member
-      </a>
-      <p class="accordion__content">Resident Board Member: Aesthetic Plastic Surgery, Journal of the International Society for Aesthetic Plastic Surgery.  (2018 – current).</p></li>
+    <button class="accordion">Fibrin tissue sealant and minor skin grafts in burn surgery: A systematic review and meta-analysis (2019).</button>
+    <div class="panel">
+      <p>Grunzweig, K.A., Ascha, M., Kumar, A.R. Fibrin tissue sealant and minor skin grafts in burn surgery: A systematic review and meta-analysis (2019). Journal of Plastic Reconstructive and Aesthetic Surgery. Epub ahead of Print. doi: 10.1016/j.bjps.2018.12.036</p>
+    </div>
 
-
-        </div>
-
-
-
-
-
-
-
+    <h2>Committees</h2>
+    <button class="accordion">Resident Education Center Curriculum V9 (2018)</button>
+    <div class="panel">
+      <p>Plastic Surgery Education Network: Resident Education Center Curriculum V9 (2018) – Face and Neck Lift. Faculty mentor: Dr. Ali Totonchi.</p>
+    </div>
+    <button class="accordion">Journal of the International Society for Aesthetic Plastic Surgery</button>
+    <div class="panel">
+      <p>Resident Board Member: Aesthetic Plastic Surgery, Journal of the International Society for Aesthetic Plastic Surgery.  (2018 – current).</p>
+    </div>
 
 
 

@@ -4,10 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/">
+    <!-- <link rel="stylesheet" type="text/css" href="css/"> -->
     <link rel= "stylesheet" type= "text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Residency</title>
+    
+    <script>
+    function topnavfunc() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    // https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+    </script>
   </head>
   <body>
   <header>
@@ -20,7 +32,7 @@
         <a href = "research.html">Research</a>
         <a href = "residency.html" class = "active" >Residency</a>
         <a href = "form.html" >Contact Me</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="topnavfunc()">
       <i class="fa fa-bars"></i>
     </a>
 
@@ -30,7 +42,7 @@
     <h1>Residency</h1>
     <main id="content">
       <h2>I am a third year integrated resident in Cleveland, Ohio.</h2>
-
+    <div class = "content">
     <div class = "gallery">
     <img src="images/ASPSmeeting2018.jpeg" title = "This is a test" alt = "ASPS meeting"/>
     <img src="images/ASPSmeetingwomenresidents.jpeg" alt = "ASPS women residents"/>
@@ -45,6 +57,7 @@
     <img src="images/OVSPS2018.jpeg" alt = "OVSPS 2018"/>
     <img src="images/Womensurgeons.jpeg" alt = "women surgeons"/>
     </div>
+  </div>
     </main>
 
     <footer>
