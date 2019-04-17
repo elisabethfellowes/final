@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/">
+    <link rel= "stylesheet" type= "text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Form</title>
+    <script>
+    function checkForm(){
+      var submit = true
+      if (document.getElementById("name").value.length == 0) {
+              document.getElementById("nameError").style.display = "block";
+              console.log("no name");
+              submit = false;
+
+      }
+      if (document.getElementById("name").value.length != 0){
+        document.getElementById("nameError").style.display =  "none";
+
+      }
+      if (document.getElementById("email").value.length == 0) {
+        document.getElementById("emailError").style.display = "block";
+        console.log("no email");
+        submit = false;
+        return submit;
+      }
+      if (document.getElementById("email").value.length != 0){
+        document.getElementById("addressError").style.display =  "none";
+        return submit;
+      }
+      if (document.getElementById("reason").value.length == 0) {
+        document.getElementById("reasonError").style.display = "block";
+        console.log("no reason");
+        submit = false;
+        return submit;
+      }
+      if (document.getElementById("reason").value.length != 0){
+        document.getElementById("reasonError").style.display =  "none";
+        return submit;
+      }
+      else{return submit;}
+      // Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+    }
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="#content" class="skip">Skip to content</a>
+      <nav>
+        <ul>
+          <li><a href = "index.html" >Home</a></li>
+          <li><a href = "about.html" >About</a></li>
+          <li><a href = "aesthetics.html">Aesthetics</a></li>
+          <li><a href = "research.html">Research</a></li>
+          <li><a href = "residency.html">Residency</a></li>
+          <li><a href = "form.html" class = "current">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content">
+    <h1>Contact Me</h1>
+    <h2>I'm here to help in anyway I can.<br> Please leave some general information and I'll get back to you within two business days!</h2>
+    <form action="https://formspree.io/elisabeth.8.fellowes@gmail.com" method = "post">
+      <fieldset>
+        <label for = "name"> Name: </label>
+        <input type = "text" id = "name" name = "name" placeholder = "name"><br>
+        <p class="errorMsg" id="nameError">Please enter your name above!</p>
+        <label for = "email"> Email: </label>
+        <input type = "email" id = "email" name = "email" placeholder = "abc@def.com"><br>
+        <p class="errorMsg" id="emailError">Please enter your email above!</p>
+        <label for = "reason"> What can I help you with? </label>
+        <input type = "text" id = "reason" name = "reason" placeholder = "consultation, etc."><br>
+        <p class="errorMsg" id="reasonError">Please provide a reason for contacting.</p>
+        <input type = "submit" value = "submit">
+
+      </fieldset>
+
+    </form>
+  </body>
+</html>

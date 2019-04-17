@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/">
+  <link rel= "stylesheet" type= "text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Cormorant%20Garamond' rel='stylesheet'>
+  <title>Home</title>
+  <script>
+  var i = 0;
+  var txt = "Hi! I'm Kate Grunzweig: MD Plastic Surgery Resident.  I'm a third year integrated resident in Cleveland, Ohio."; /* The text */
+  var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("typewriter").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);}
+    }
+      </script>
+<!-- https://www.w3schools.com/howto/howto_js_typewriter.asp -->
+
+</head>
+
+<body>
+
+<header>
+  <a href="#content" class="skip">Skip to content</a>
+  <nav>
+    <ul>
+      <li><a href = "index.html" class = "current">Home</a></li>
+      <li><a href = "about.html" >About</a></li>
+      <li><a href = "aesthetics.html">Aesthetics</a></li>
+      <li><a href = "research.html">Research</a></li>
+      <li><a href = "residency.html">Residency</a></li>
+      <li><a href = "form.html">Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+
+  <h1>Katherine Grunzweig</h1>
+  <div class= "hometext">
+  <p id = "typewriter"></p>
+  <button type = "button" onclick = "typeWriter()">Who's Kate?</button>
+<!-- https://www.w3schools.com/howto/howto_js_typewriter.asp --></div>
+  <br>
+  <div class = "hometext">
+  </div>
+  <div class = "parallax">
+  <div class = "text-box"><h2>"Let the beauty of what you love be what you do." - Rumi </h2>
+  </div>
+
+  </div>
+
+
+
+
+
+</main>
+
+<footer>
+
+  <img src="images/browsericon.png" class = "image3" alt = "Kate's icon">
+  <a href="https://www.instagram.com/aestheticsbydrkatherine/" class="fa fa-instagram" aria-label="instagram"></a>
+  <a href="mailto:k.a.grunzweig@gmail.com" class="fa fa-envelope" aria-label="email"></a>
+
+</footer>
+</body>
+</html>
