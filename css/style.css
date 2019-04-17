@@ -56,7 +56,8 @@ h2{
   .current{
     text-decoration: none;
     color: #121E40;
-    text-transform: uppercase;
+    background-color: grey;
+
   }
 
 }
@@ -98,7 +99,7 @@ h2{
 /* PARALLAX STYLE */
 .text-box{
   height: 60px;
-  padding: 50px;
+  padding: 200px;
   text-align: center;
   margin: 0 auto;
   background-color: inherit;
@@ -346,7 +347,7 @@ label {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 400px) and (max-width: 700px){
+@media only screen and (min-width: 300px) and (max-width: 700px){
 
 .gallery{
   display: grid;
