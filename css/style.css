@@ -377,7 +377,9 @@ p{
   font-size: 150%;
   line-height: 2.5;
 }
-
+h1{
+  font-size: 80px;
+}
   .text-box{
     margin: auto;
     width: 50%;
