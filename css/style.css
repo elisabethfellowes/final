@@ -416,8 +416,9 @@ h1{
       height: 650px;
       perspective: 1000px;
       margin-left:5%;
-    
-
+    }
+    .flip-card:focus .flip-card-inner {
+      transform: rotateY(180deg);
     }
     .parallax {
       background-image: url("../images/grass.jpg");
@@ -493,7 +494,7 @@ h1{
         background-color: white;
 
       }
-.topnav a:not(:first-child) {display: block;}
+.topnav a:not(.active) {display: block;}
       .topnav a {
 
         float: left;
