@@ -588,12 +588,7 @@ h1{
 	.animation:hover{
 		-webkit-animation-name:none;
 	}
+  
 
 
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
