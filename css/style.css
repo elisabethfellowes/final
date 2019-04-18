@@ -197,7 +197,9 @@ input{
   height: 25px;
   width: 50%;
   margin-left: 25%;
+  margin-bottom: 5px;
 }
+
 input:focus{
   background: grey;
 }
@@ -213,7 +215,7 @@ label {
   border-style: solid;
   border-width: 2px;
   width: 200px;
-  margin-left: 35%;
+  margin-left: 25%;
   display:none; }
 
 /* FLIP CARD STYLE */
@@ -375,7 +377,7 @@ p{
   font-family: garamond;
   text-align: left;
   font-size: 150%;
-  line-height: 2.5;
+  line-height: 1.5;
 }
 h1{
   font-size: 80px;
@@ -410,10 +412,11 @@ h1{
   }
   .flip-card {
       background-color: transparent;
-      width: 400px;
-      height: 450px;
+      width: 375px;
+      height: 650px;
       perspective: 1000px;
       margin-left:5%;
+    
 
     }
     .parallax {
@@ -434,6 +437,15 @@ h1{
       font-size: 20px;
       line-height: 1.5;
     }
+    .errorMsg {
+      font-family: 'Cormorant Garamond';
+      color:red;
+      border:none;
+      text-align: center;
+      width: 200px;
+      margin-left: 25%;
+      display:none; }
+
 @media only screen and (min-width: 700px){
 
   .gallery{
