@@ -11,6 +11,21 @@ li{
   font-family: garamond;
 	color: #121E40;
 }
+.productgallery{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.caption {
+
+  font-size: 110%;
+  text-align: left;
+  width: 50%;
+  line-height: 1.5;
+  font-family: garamond;
+  height: 200px;
+}
 .hometext {
   text-align: center;
   font-size: 150%;
@@ -51,6 +66,16 @@ h2{
   justify-content: center;
   font-family: garamond;
   font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+
+}
+.subheading {
+  text-align: center;
+  font-size: 140%;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
   line-height: 1.5;
 }
   .current{
@@ -109,6 +134,7 @@ h2{
   background-image: url("../images/grass.jpg");
   background-attachment: fixed;
   height: 500px;
+  margin-bottom: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,6 +207,7 @@ button {
   margin: 4px 2px;
   padding: 10px 10px;
   box-shadow: 5px 5px grey;
+  border-radius: 12px;
 
 }
 button:hover {
@@ -196,7 +223,8 @@ input{
   display: block;
   height: 25px;
   width: 50%;
-  margin-left: 25%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 5px;
 }
 
@@ -271,6 +299,7 @@ label {
   padding: 18px;
   margin-top: 10px;
   margin-bottom: 5px;
+  font-family: garamond;
   width: 100%;
   text-align: left;
   border: none;
@@ -288,6 +317,7 @@ label {
   background-color: white;
   display: none;
   overflow: hidden;
+  font-family: garamond;
 }
 
 /* .panel, .accordion:active{
@@ -411,7 +441,7 @@ h1{
   .flip-card {
       background-color: transparent;
       width: 375px;
-      height: 650px;
+      height: 700px;
       perspective: 1000px;
       margin-left:5%;
     }
@@ -446,6 +476,21 @@ h1{
       margin-left: 25%;
       display:none; }
 
+      .productgallery img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+      .caption {
+
+        font-size: 110%;
+        text-align: left;
+        width: 50%;
+        line-height: 1.5;
+        font-family: garamond;
+        height: 200px;
+      }
 @media only screen and (min-width: 700px){
 
   .gallery{
@@ -533,6 +578,21 @@ h1{
       .topnav a.icon {
         display: none;
     }
+    .productgallery{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    .caption {
+
+      font-size: 110%;
+      text-align: left;
+      width: 50%;
+      line-height: 1.5;
+      font-family: garamond;
+      height: 200px;
+    }
 }
 @media only screen and (min-width: 1000px){
 
@@ -588,7 +648,7 @@ h1{
 	.animation:hover{
 		-webkit-animation-name:none;
 	}
-  
+
 
 
 }
