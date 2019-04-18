@@ -278,12 +278,8 @@ label {
   transition: 0.4s;
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active, .accordion:hover{
   background-color: #474b51;
-}
-
-.accordion, .active {
-  display: block;
 }
 
 
@@ -294,7 +290,9 @@ label {
   overflow: hidden;
 }
 
-
+/* .panel, .accordion:active{
+  display: block;
+} */
 
 /* TOPNAV RESPONSIVE STYLE */
 .topnav {
@@ -438,6 +436,7 @@ h1{
       font-size: 20px;
       line-height: 1.5;
     }
+
     .errorMsg {
       font-family: 'Cormorant Garamond';
       color:red;
@@ -493,6 +492,15 @@ h1{
         overflow: hidden;
         background-color: white;
 
+      }
+      h2{
+        color:black;
+        font-weight: 400;
+        text-align:center;
+        justify-content: center;
+        font-family: garamond;
+        font-size: 40px;
+        line-height: 1.5;
       }
 .topnav a:not(.active) {display: block;}
       .topnav a {
