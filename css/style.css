@@ -169,7 +169,6 @@ footer {
 	height: 60px;
 	width: 200px;
   background-color: #444;
-	background-image: -moz-linear-gradient(top, #444, #444);
 	position: relative;
 	color: white;
 	padding: 10px;
@@ -181,19 +180,26 @@ footer {
 	text-shadow: 0 0 1px #000;
   margin: 0 auto;
 }
-.callout::before {
+.callout:before {
 	content: "";
 	width: 0px;
 	height: 0px;
+  left: 23px;
+	top: -42px;
 	border: 0.8em solid transparent;
 	position: absolute;
 
 }
-.callout.top::before {
-	left: 45%;
-	bottom: -20px;
-	border-top: 10px solid #444;
-
+.callout:after {
+  content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 100px;
+	top: -32px;
+  border: 8px solid transparent;
+  border-bottom: 25px solid #444;
+  z-index: 5;
 }
 /* http://cssdeck.com/labs/bv45bh6p */
 
@@ -291,7 +297,6 @@ label {
 /* https://www.w3schools.com/howto/howto_css_flip_card.asp */
 
 /* ACCORDION STYLES */
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #eee;
   color: black;
@@ -306,7 +311,6 @@ label {
   outline: none;
   transition: 0.4s;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover{
   background-color: #474b51;
 }
@@ -320,9 +324,8 @@ label {
   font-family: garamond;
 }
 
-/* .panel, .accordion:active{
-  display: block;
-} */
+
+
 
 /* TOPNAV RESPONSIVE STYLE */
 .topnav {
@@ -517,6 +520,7 @@ h1{
 
     .text-box{
       margin: auto;
+
       width: 50%;
       padding: 170px 0;
     }
